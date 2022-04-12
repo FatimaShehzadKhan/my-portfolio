@@ -1,0 +1,997 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    font-family: 'Staatliches', cursive;
+    /* letter-spacing: 3px; */
+  }
+  
+  .animate__flash{
+      animation-duration: 4s;
+  }
+  .bigimage{
+      height: 100vh;
+      max-width: 100vw;
+      position: relative;
+      background-image: url('/images/bg2.jpg');
+      /* background-image: linear-gradient(135deg, #fcd2e6, #f8f1b6); */
+      background-size: cover;
+      text-align: center;
+      /* overflow-y: scroll; */
+      /* margin: 20px; */
+      /* opacity: 20%; */
+      
+    }
+    .overlay{
+      /* padding: 20px; */
+      background-color: rgba(0,7,11,0.7);
+      border: 6px solid #5f5e5f;
+      height: 100%;
+      max-width: 100%;
+      font-size: 26px;
+      color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(0,0,0,0,5);
+      font-family: 'Staatliches', cursive;
+      letter-spacing: 3px;
+      /* text-align: center;
+      position: relative; */
+  }
+  .overlay h1{
+      /* display: inline !important; */
+      /* text-transform: uppercase; */
+      width: 100%;
+      font-family: 'PT Sans Narrow', sans-serif;
+      /* font-family: 'Playfair Display', serif; font-size: 14pt; */
+      letter-spacing: 3px;
+      font-size: 72pt !important;
+      font-weight: bolder;
+      /* font-size: 72px; */
+    /* background: -webkit-linear-gradient(rgb(128, 127, 127), #ff4a53, rgb(160, 89, 89));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      text-decoration: underline; */
+      /* display: block; */
+      /* background-color:rgb(255, 255, 255,0.75); */
+      color: #ff4a53;
+      /* background-color: rgba(255, 255, 255,0.9); */
+  }
+  .overlay p{
+    font-family: fangsong;
+    font-size: 32pt;
+    letter-spacing: 1px;
+    /* font-style: italic; */
+    color: #ffffff;
+    /* text-transform: uppercase; */
+    /* font-weight: 600; */
+    /* background-color: rgb(255, 255, 255,0.7); */
+}
+  .GradientBorder {
+      position: relative;
+      width: 450px;
+      padding: 40px 0;
+      font-size: 5em;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 5px;
+      background: #020117;
+    }
+    .GradientBorder::after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+      z-index: -1;
+    }
+    .GradientBorder::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+      z-index: -2;
+      filter: blur(40px);
+    }
+    .overlay p{
+      overflow: hidden;
+    }
+  
+    @media only screen and (min-width:0px) and (max-width: 400px){
+      /* .overlay{
+        height: 0;
+        overflow: hidden;
+        
+    /* transition: height 0.66s ease-out; */
+      .overlay h1{ 
+        font-size: 40pt;}
+      .aboutme .myintro {
+        padding: 5px;
+        /* width: fit-content !important; */
+        display: block !important;
+        /* font-size: 10pt; */
+      }  
+      .myintro h5{
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: 800 !important;
+        /* padding: 30px 0px; */
+        text-transform: uppercase;
+        font-size: 14pt !important;
+        letter-spacing: 0px !important;
+        text-decoration: underline;
+        text-decoration-color: #ff4a53;
+        text-decoration-style: double;
+        padding: 0 !important;
+        display: block;
+      }
+      .aboutme .myimage{
+        margin: 4px 0px !important;
+        padding: 0px !important;
+        /* margin: 100px 0px 0px 30px; */
+        /* width: 600px; */
+        border: 6px solid;
+        border-image: repeating-linear-gradient(50deg, #ff4a53, rgb(166, 225, 255), #ff4a53 80vh) 30;
+        /* border-top-style: solid;
+        border-top-width: 3.1px; */
+        /* height: fit-content; */
+        /* height: 550px;
+        width: 170px !important; */
+    
+    }
+    
+    .aboutme .myimage img{
+      /* margin: 100px 0px 0px 30px; */
+      /* width: 600px; */
+      /* border: 6px solid; */
+      /* border-image: repeating-linear-gradient(50deg, #ff4a53, rgb(166, 225, 255), #ff4a53 80vh) 30; */
+      /* border-top-style: solid;
+      border-top-width: 3.1px; */
+      /* height: fit-content; */
+      height: 332px !important;
+      width: 115px !important;
+      margin: 0;
+    
+  
+  }
+  .myintro ul, .myintro p{
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px !important;
+    font-size: 8pt !important;
+    padding: 0;
+    margin: 0;
+    display: block !important;
+    
+    /* font-weight: 300; */
+  }
+  .myintro ul li::before {
+    overflow: hidden !important;
+    content: "\2023";
+    color: #ff4a53;
+    font-weight: bold;
+    display: none !important; 
+    width: 1em;
+    margin-left: -1em;
+    font-size: 17pt !important;
+  }  
+ 
+   
+  }
+            
+  .circle1 {
+      background: #6ba6ce;
+      margin: 0px 800px 0px 0px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; 
+    }
+     
+    .circle2 {
+      background: #570520;
+      margin: 0px 500px 0px 0px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; 
+    }  
+    .rectangle {
+        display: inline !important;
+        /* align-self: flex-start; */
+      height: 100vh;
+      width: 150px;
+      background-color: #555;
+      margin: 0px 90vw 0px 7vw;
+  }
+  
+  
+  /* === about me section === */
+  .abtme{
+    width: 100%;
+  }
+  .aboutme{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .myintro{
+    padding: 100px 50px 0px 50px;
+  }
+  .myintro h3{
+    background-color: #ff4a53;
+    color: white;
+    padding: 10px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    
+  
+  }
+  .myintro ul {
+    list-style: none;
+  }
+  
+  .myintro ul li::before {
+    content: "\2023";
+    color: #ff4a53;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    font-size: 20pt;
+  }
+  .myintro h5{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 800 !important;
+    padding: 30px 0px;
+    text-transform: uppercase;
+    font-size: 18pt;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: #ff4a53;
+    text-decoration-style: double;
+  }
+  /* .line {
+               
+    /* Increase this as per requirement */
+    /*padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+  } */
+  
+  .myintro ul{
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    font-size: 13pt;
+    
+    /* font-weight: 300; */
+  }
+  .myintro p{
+    font-family: 'Staatliches', cursive;
+    padding: 10px 0px;
+    letter-spacing: 2px;
+    font-size: 14pt;
+  }
+  /* .aboutme img{
+    border-image: linear-gradient(red, blue) 27 / 35px;
+  } */
+  /* #gradient {
+    /* padding: 20px; */
+    /* height: 100vh; */
+    
+    .aboutme .myimage{
+      margin: 100px 0px 0px 30px;
+      /* width: 600px; */
+      border: 6px solid #ff4a53;
+      /* border-image: repeating-linear-gradient(50deg, #ff4a53, rgb(166, 225, 255), #ff4a53 80vh) 30; */
+      /* border-top-style: solid;
+      border-top-width: 3.1px; */
+      height: fit-content;
+  
+  }
+  
+  
+  
+  
+  
+  
+  /* ===myskills section css=== */
+  .my-skills-div h3{
+    background-color: #ff4a53;
+    color: white;
+    padding: 10px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    
+  }
+  .progress-bar{
+    /* padding: 20px 10px; */
+    display: inline-table;
+    /* margin: 0px 60px; */
+    height: 8vh;
+    float: right !important;
+    margin: auto;
+
+  }
+  .progress{
+    /* display: flex; */
+
+    padding: 30px 0px 80px 0px;
+    /* margin: 20px 30px 20px 140px; */
+    /* margin: auto ; */
+  }
+  .p4 strong{
+    float: left !important;
+    /* padding: 0px 68px 0px 2px; */
+  
+  }
+  .p1 strong{
+    float: left !important;
+    /* padding: 0px 70px 0px 2px; */
+    /* text-align: center; */
+  }
+  .p3 strong{
+    float: left !important;
+    /* padding: 0px 0px 0px 2px; */
+  }
+  .p2 strong{
+    float: left !important;
+    /* padding: 0px 85px 0px 2px; */
+    /* text-align: center; */
+  }
+  .progress strong{
+    /* margin: 0px 10px; */
+      /* font-family: 'Staatliches', cursive; */
+      /* letter-spacing: 3px; */
+      float: left !important;
+      font-size: 12pt;
+      font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 800 !important;
+    padding: 0px 0px 0px 30px;
+    text-transform: uppercase;
+    font-size: 18pt;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: #ff4a53;
+    text-decoration-style: double;
+    
+  }
+  .pbar-4{
+    float: right !important;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+    font-size: 30pt !important;
+    background-color: rgb(185, 182, 181) !important;
+    color: #ff4a53 !important;
+  }
+  .pbar-3{
+    float: right !important;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+    font-size: 30pt !important;
+    /* background-color: rgb(185, 182, 181) !important; */
+    color: #ff4a53 !important;
+    background-color: rgb(167, 163, 163) !important;
+    /* margin: 0px 0px 0px 0px; */
+    /* padding: 0px 0px 0px 80px !important; */
+  }
+  .pbar-2{
+    float: right !important;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+    font-size: 30pt !important;
+    /* background-color: rgb(185, 182, 181) !important; */
+    color: #ff4a53 !important;
+    background-color: rgb(104, 102, 102) !important;
+  }
+  .pbar-1{
+    /* margin: ; */
+    float: right !important;
+    font-family: 'PT Sans Narrow', sans-serif !important;
+    font-size: 30pt !important;
+    /* background-color: rgb(185, 182, 181) !important; */
+    color: #ff4a53 !important;
+    background-color: rgb(93, 95, 95) !important;
+    /* padding: 0px 0px 0px 80px !important; */
+    /* width: ; */
+  }
+  
+  
+  /* ===resume and education css=== */
+  .resume{
+    max-width: 100%;
+    height: 130vh;
+    padding: 0px 0px 0px 0px;
+    /* overflow: scroll; */
+  }
+  .resume h3{
+    background-color: #ff4a53;
+    color: white;
+    padding: 10px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 0px 0px 7vh 0px;
+  }
+  
+  .resume-title h4{
+    /* font-size: 12pt; */
+      font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 800 !important;
+    padding: 20px 20px 20px 0px;
+    text-transform: uppercase;
+    font-size: 19pt;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: #ff4a53;
+    text-decoration-style: double;
+  
+  }
+  .resume-item h5{
+    font-family: 'BIZ UDMincho', serif;
+    font-size: 17pt;
+  }
+  .single-post-text{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14pt;
+    letter-spacing: 1px;
+    /* font-weight: 590 !important; */
+  }
+  .company{
+    font-size: 13pt;
+    font-family: 'Alumni Sans Inline One', cursive;
+    letter-spacing: 2px;
+    color :#ff4a53;
+  }
+  .date{
+    font-family: 'Alumni Sans Inline One', cursive;
+    letter-spacing: 2px;
+    font-size: 13pt;
+    color: #ff4a53;
+  }
+  .fa-map-marker{
+    color: black;
+  }
+  /* .resume-item{
+    /* background-color: rgb(255, 202, 202); */
+  .v1 {
+      border-right: 2px solid #ff4a53;
+      /* border-right: 3px ridge #ff4a53; */
+      /* height: 80vh; */
+      /* padding: 0px 10px; */
+      /* border-style: groove; */
+  }
+  .col-md-6{
+    overflow: hidden;
+  }
+  @media only screen and (min-width: 0px) and (max-width: 400px){
+    .vertical {
+      border: 3px groove #ff4a53;
+      /* border-right: 3px ridge #ff4a53; */
+      /* height: 80vh; */
+      /* padding: 0px 20px; */
+      /* border-style: groove; */
+    }
+  .resume{
+    height: 350vh;
+  }
+  .resume-title h4{
+    /* font-size: 12pt; */
+      font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 800 !important;
+    padding: 10px 20px 20px 0px;
+    text-transform: uppercase;
+    font-size: 19pt;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: #ff4a53;
+    text-decoration-style: double;
+  
+  }
+  .resume-item h5{
+    font-family: 'BIZ UDMincho', serif;
+    font-size: 15pt; 
+    /* 17 */
+  }
+  .single-post-text{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 12pt;
+    /* 14 */
+    letter-spacing: 1px;
+    /* font-weight: 590 !important; */
+  }
+  .company{
+    font-size: 11pt;
+    /* 13 */
+    font-family: 'Alumni Sans Inline One', cursive;
+    letter-spacing: 2px;
+    color :#ff4a53;
+  }
+  .date{
+    font-family: 'Alumni Sans Inline One', cursive;
+    letter-spacing: 2px;
+    font-size: 11pt;
+    /* 13 */
+    color: #ff4a53;
+  }
+  .contact-div div {
+    color: black;
+    font-size: 6pt !important;
+    /* 9pt */
+    font-family: 'PT Sans Narrow', sans-serif;
+    /* font-size: 14pt; */
+    /* letter-spacing: 1px; */
+    /* border-bottom: 1px solid #000; */
+    /* margin: 0px 20px; */
+  }
+  .contact{
+    /*position: absolute; */
+    /* overflow: hidden; */
+    /* max-width: 100%; */
+    height: 60vh !important;
+    padding: 16px 0px;
+    width: 100vw;
+  }
+  
+}
+
+/* ===services css mdia qury=== */
+.myprovisions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.prov-sec h3{
+  background-color: #ff4a53;
+  color: white;
+padding: 10px;
+font-family: 'Staatliches', cursive;
+letter-spacing: 3px;
+text-align: center;
+
+
+}
+/* ===services css==== */
+  .material-icons{
+    color: #ff4a53;
+    font-size: 50pt !important;
+  }
+  .prov-sec h3 strong{
+    font-weight: 500;
+    border-bottom: 2px solid rgb(255, 221, 221);
+  }
+.prov-sec{
+  margin: 6vh 0 6vh 0;
+}
+.prov-sec p{
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18pt;
+    margin: 4vh 0 4vh 0;
+    letter-spacing: 1px;
+}
+.card-header{
+    text-align: center;
+}
+.card-body{
+    text-align: center;
+}
+.card-title{
+/* font-size: 12pt; */
+  font-family: 'PT Sans Narrow', sans-serif;
+font-weight: 800 !important;
+/* padding: 0px 0px 10px 0px; */
+text-transform: uppercase;
+font-size: 15pt;
+letter-spacing: 2px;
+text-decoration: underline;
+text-decoration-color: #ff4a53;
+text-decoration-style: double;
+
+}
+.card-text{
+font-family: 'PT Sans Narrow', sans-serif;
+font-size: 12pt;
+letter-spacing: 1px;
+/* font-weight: 590 !important; */
+}
+
+
+
+/* contact section css=== */
+  .contact{
+    /* position: absolute; */
+    /* overflow: hidden; */
+    /* max-width: 100%; */
+    /* height: 40vh; */
+    padding: 60px 0px 0px 0;
+    width: 100vw;
+    
+  }
+  .contact-div{
+  
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* align-content: center; */
+  }
+  .contact h3{
+    background-color: #ff4a53;
+    color: white;
+    padding: 10px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+    /* text-align: left; */
+    text-align: center;
+  }
+  .contact h3 strong{
+    /* font-family: 'PT Sans Narrow', sans-serif; */
+    font-weight: 500;
+    border-bottom: 2px solid rgb(255, 221, 221);
+    /* color: black; */
+  }
+  .contact-div div i{
+    color: #ff4a53;
+    font-size: 15pt;
+    margin: 0px 13px 0px 0px;
+  }
+  .contact-div div {
+    color: black;
+    font-size: 15pt;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14pt;
+    letter-spacing: 1px;
+    /* border-bottom: 1px solid #000; */
+    /* margin: 0px 20px; */
+  }
+  .fa-instagram{
+    font-weight: 600;
+  }
+  
+  
+  
+
+
+
+  /* ===work portfolio section css=== */
+  .work h3{
+    text-align: center;
+    /* margin: 30vh 0px 20px 0px; */
+    background-color: #ff4a53;
+    color: white;
+    padding: 10px 30px !important;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+    /* text-align: left; */
+
+  }
+  .marketing h2{
+    /* font-family: 'BIZ UDMincho', serif !important;
+    font-size: 15pt;
+    font-weight: 590 !important;
+    background-color: #ff4a53 !important;
+    color: black !important;
+    text-transform: uppercase;
+    text-align: center !important;
+    /*padding: 0%; */
+    margin: 20px 0 10px 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18pt;
+    letter-spacing: 1px;
+    font-weight:bold;
+    /* text-decoration: double underline; */
+    border-bottom: 1px solid #ff4a53;
+    
+  }
+  .marketing p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 17pt;
+    letter-spacing: 1px;
+  }
+
+  .text-color .material-icons{
+    color: #ff4a53;
+    font-size: 20pt !important;
+  }
+  /* .resume-title{
+    display: inline-block !important;
+  } */
+
+
+
+
+  /* ===header section css=== */
+  .navbar{
+    /* background-color: rgb(5, 5, 5); */
+    background-color: #ff4a53;
+  }
+  /* ul.navbar-nav{
+    /* float: right; */
+    /*text-align: center !important;
+    justify-content: center;
+  } */
+  /* .nav-item{
+    /* float: inline-end; */
+
+/*  } */
+.nav-item{
+  font-size: 18pt;
+  font-family: 'PT Sans Narrow', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+}
+.nav-item .active{
+  color: #ffffff !important;
+}
+
+.nav-link:hover,.nav-link:focus, .nav-link:after{
+  color: #ffffff !important;
+}
+@media only screen and (min-width: 800px){
+  .resume{
+    max-width: 100%;
+    height: 124vh;
+    padding: 0px 0px 0px 0px;
+    /* overflow: scroll; */
+  }
+  .marketing h2{
+    /* font-family: 'BIZ UDMincho', serif !important;
+    font-size: 15pt;
+    font-weight: 590 !important;
+    background-color: #ff4a53 !important;
+    color: black !important;
+    text-transform: uppercase;
+    text-align: center !important;
+    /*padding: 0%; */
+    margin: 0px 0 10px 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18pt;
+    letter-spacing: 1px;
+    font-weight:bold;
+    /* text-decoration: double underline; */
+    border-bottom: 1px solid #ff4a53;
+    
+  }
+  .nav-item{
+    margin: 0px 0vw 0 4vw;
+    
+  }
+  .nav-link{
+    /* margin: 0px 0vw 0 4vw; */
+    color: #000000 !important;
+    
+  }
+  .active{
+    margin: 0 0 0 19vw;
+  }
+  .navbar{
+    /* height: 14vh; */
+    padding: 0 !important;
+  }
+  .navbar-brand img{
+    /* height: 13vh !important;
+   width: 13vw !important; */
+   margin: 0 !important;
+}
+.justify-content-evenly{
+  margin: 26vh 0px 0vh 0 !important;
+}
+  
+   
+}
+@media only screen and (min-width: 0px) and (max-width: 400px){
+    /* [data-aos] {
+      visibility: hidden;
+    }
+     */
+  
+  .d-flex{
+    background-color:#000000;
+    height: 13vh !important;
+    font-family: 'Staatliches', cursive;
+  
+  }
+  .d-flex p{
+    /* background-color:#000000; */
+    /* height: 14vh; */
+    font-family: 'Staatliches', cursive;
+    font-size: 8pt !important;
+    color: #ff4a53;
+    /* letter-spacing: 2px; */
+  }
+  
+  
+  .navbar{
+    height: 14vh;
+    padding: 0 !important;
+    
+  }
+
+    .navbar-brand img{
+       height: 10vh !important;
+      width: 10vw !important;
+}
+.nav-link:hover,.nav-link:focus, .nav-link:after{
+  color: #ffffff !important;
+}
+.nav-link{
+  /* margin: 0px 0vw 0 4vw; */
+  color: #000000 !important;
+  
+}
+.nav-item{
+  font-size: 8pt;
+  font-family: 'PT Sans Narrow', sans-serif;
+  /* letter-spacing: 2px; */
+  font-weight: 600;
+  /* text-transform: uppercase; */
+}
+.nav-item .active{
+  color: #ffffff !important;
+}
+.navbar-collapse{
+  background-color: #ff4a53;
+  width: 100%;
+}
+.nav-item{
+  font-size: 12pt;
+  font-family: 'PT Sans Narrow', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+}
+.work h3{
+    /* display: block; */
+    margin: 0vh 0px 20px 0px;
+}
+.overlay{
+  /* padding: 20px; */
+    border: 6px solid #5f5e5f;
+    height: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0,0,0,0,5);
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+    margin: 14vh 0vw;
+    /* text-align: center;
+    position: relative; */
+}
+.overlay h1{
+    /* display: inline !important; */
+    /* text-transform: uppercase; */
+    width: 100vw;
+    font-family: 'PT Sans Narrow', sans-serif;
+    /* font-family: 'Playfair Display', serif; font-size: 14pt; */
+    letter-spacing: 3px;
+    font-size: 16pt !important;
+    font-weight: bolder;
+    /* font-size: 72px; */
+  /* background: -webkit-linear-gradient(rgb(128, 127, 127), #ff4a53, rgb(160, 89, 89));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-decoration: underline; */
+    /* display: block; */
+    /* background-color:rgb(255, 255, 255,0.75); */
+    color: #ff4a53;
+    background-color: rgba(255, 255, 255,0.9);
+}
+.overlay p{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 7pt;
+  letter-spacing: 1px;
+  /* font-style: italic; */
+  color: #ffffff;
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  background-color: rgb(196, 189, 189,0.6); 
+ }
+
+
+ /* ===services css media=== */
+ .material-icons{
+  color: #ff4a53;
+  font-size: 30pt !important;
+  /* 50 */
+}
+.myintro h3{
+  font-size: 10pt;
+}
+.myintro h5{
+  /* font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 800 !important;
+  /* padding: 30px 0px; */
+  /* text-transform: uppercase; */ 
+  font-size: 8pt !important;
+}
+.prov-sec h3{
+  font-size: 10pt;
+
+}
+.resume h3{
+  font-size: 10pt;
+}
+.contact h3{
+  font-size: 10pt;
+}
+.work h3{
+  font-size: 10pt;
+}
+.prov-sec h3 strong{
+  font-weight: 500;
+  border-bottom: 2px solid rgb(255, 221, 221);
+}
+.prov-sec{
+margin: 6vh 0 6vh 0;
+}
+.prov-sec p{
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 10pt;
+  /* 18 */
+  margin: 4vh 0 4vh 0;
+  letter-spacing: 1px;
+}
+.card {
+  height: 60vh;
+}
+.card-header{
+  text-align: center;
+}
+.card-body{
+  text-align: center;
+}
+.card-title{
+/* font-size: 12pt; */
+font-family: 'PT Sans Narrow', sans-serif;
+font-weight: 800 !important;
+/* padding: 0px 0px 10px 0px; */
+text-transform: uppercase;
+font-size: 12pt;
+/* 15 */
+letter-spacing: 2px;
+text-decoration: underline;
+text-decoration-color: #ff4a53;
+text-decoration-style: double;
+
+}
+.card-text{
+font-family: 'PT Sans Narrow', sans-serif;
+font-size: 9pt;
+/* 12 */
+letter-spacing: 1px;
+/* font-weight: 590 !important; */
+}
+
+
+}
+
+
+
+
+/* footer css=== */
+.d-flex{
+  background-color:#000000;
+  /* height: 14vh; */
+  font-family: 'Staatliches', cursive;
+
+}
+.d-flex p{
+  /* background-color:#000000; */
+  /* height: 14vh; */
+  font-family: 'Staatliches', cursive;
+  font-size: 16pt;
+  color: #ff4a53;
+  letter-spacing: 2px;
+}
